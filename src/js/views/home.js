@@ -16,8 +16,8 @@ export const Home = () => {
 					</div>
 				</div>
 			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button, bootstrap is working
+			<a href="#" className="btn btn-success" onClick={() => actions.changeUser()}>
+				Change user
 			</a>
 		</div>
 	);
