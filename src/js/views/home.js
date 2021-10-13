@@ -11,7 +11,9 @@ export const Home = () => {
 			<h1>Color Demonstrator</h1>
 			<p>
 				<div className="colorBox" style={{ background: store.color }}>
-					<h2 style={{ margin: "40% auto" }}>{store.user}</h2>
+					<div className="userName">
+						<h2>{store.user}</h2>
+					</div>
 				</div>
 			</p>
 			<a href="#" className="btn btn-success">
