@@ -1,6 +1,8 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
+			color: "red",
+			user: "George",
 			demo: [
 				{
 					title: "FIRST",
