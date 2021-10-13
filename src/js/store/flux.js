@@ -5,10 +5,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 			user: "George"
 		},
 		actions: {
-			changeUser: () => {
-				if (getStore().user == "George") setStore({ color: "fuchsia", user: "Paola" });
-				else if (getStore().user == "Paola") setStore({ color: "orange", user: "Matthew" });
-				else setStore({ color: "red", user: "George" });
+			changeUser: (nameProp, colorProp) => {
+				setStore({ color: colorProp, user: nameProp });
 			},
 
 			// Use getActions to call a function within a fuction
